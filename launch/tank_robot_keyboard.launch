@@ -1,0 +1,12 @@
+<launch>
+	<arg name="init_speed" value="0.0"/>
+	<arg name="init_turn" value="0.0"/>
+
+	<node name="tank_robot_keyboard" pkg="tank_robot_keyboard" 		
+			type="tank_robot_keyboard.py" output="screen">
+
+	<param name="speed" value="$(arg init_speed)"/>
+	<param name="turn" value="$(arg init_turn)"/>
+
+	</node>
+</launch>
